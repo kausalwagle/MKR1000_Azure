@@ -1,16 +1,16 @@
-//THANK YOU MOHAN 
+//THANK YOU MOHANP 
 #include <SPI.h>
 #include <WiFi101.h>
 
 ///*** WiFi Network Config ***///
-char ssid[] = "Kaaikaas"; //  your network SSID (name)
-char pass[] = "verynewinternet";    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "Your_SSID"; //  your network SSID (name)
+char pass[] = "YourKey";    // your network password (use for WPA, or use as key for WEP)
 ///*** Azure IoT Hub Config ***///
 //see: http://mohanp.com/  for details on getting this right if you are not sure.
 
-char hostname[] = "wever.azure-devices.net";    // host name address for your Azure IoT Hub
-char azurePOST_Uri[] = "/devices/WeverIoT/messages/events?api-version=2016-02-03"; //feed URI
-char authSAS[] = "SharedAccessSignature sr=wever.azure-devices.net%2fdevices%2fWeverIoT&sig=iU0E3ZAyoSef9WAtqesyKIBC%2bgO4sviITo3QY2l23zg%3d&se=1491574234";
+char hostname[] = "[iotHubName].azure-devices.net";    // host name address for your Azure IoT Hub
+char azurePOST_Uri[] = "/devices/[DeviceName]/messages/events?api-version=2016-02-03"; //feed URI
+char authSAS[] = "[Shared Access Key]";
 ///*** Azure IoT Hub Config ***///
 
 unsigned long lastConnectionTime = 0;            
